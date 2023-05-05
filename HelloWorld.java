@@ -1,15 +1,13 @@
-import static System.out.printf;
-
 class HelloWorld {
 	
-	public static void main(int argc, String argv[])
+	public static void main(String argv[])
 	{
 		String greeting = "world";
 		
-		if (argc == 2)
-			greeting = argv[1];
+		if (argv.length == 1)
+			greeting = argv[0];
 		
-		printf("hello %s!\n", greeting);
+		System.out.printf("hello %s!\n", greeting);
 	}
 	
 }
